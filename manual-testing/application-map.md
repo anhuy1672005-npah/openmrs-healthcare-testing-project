@@ -12,4 +12,4 @@
 | Location | Any |
 | Browser | Google Chrome |
 | OS | Windows 10/11 |
-| Testing date | YYYY-MM-DD |
+| Testing date | 2026-07-06 |
