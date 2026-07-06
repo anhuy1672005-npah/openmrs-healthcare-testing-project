@@ -152,3 +152,23 @@
 | Search patient | Patient/person search request | GET | To be confirmed | Can be tested in Postman |
 | Open patient profile | Patient/person detail request | GET | To be confirmed | May use UUID |
 | Logout | Session end request | DELETE/POST | To be confirmed | Used for session testing |
+
+## 10. Initial Test Ideas
+
+| Test Idea ID | Module | Test Idea | Priority | Candidate for Automation | Candidate for API Test |
+|---|---|---|---|---|---|
+| TI_LOGIN_001 | Login | Login with valid credentials and location | High | Yes | Yes |
+| TI_LOGIN_002 | Login | Login with invalid password | High | Yes | Yes |
+| TI_LOGIN_003 | Login | Login with empty username | Medium | Yes | No |
+| TI_LOGIN_004 | Login | Login without selecting location | Medium | Yes | No |
+| TI_SEARCH_001 | Patient Search | Search patient by valid name | High | Yes | Yes |
+| TI_SEARCH_002 | Patient Search | Search patient by patient identifier | High | Yes | Yes |
+| TI_SEARCH_003 | Patient Search | Search with non-existing keyword | Medium | Yes | Yes |
+| TI_PROFILE_001 | Patient Profile | Open patient profile from search result | High | Yes | Yes |
+| TI_PROFILE_002 | Patient Profile | Verify patient name and identifier are displayed | High | Yes | Yes |
+| TI_REGISTER_001 | Register Patient | Register patient with valid required data | High | Optional | Optional |
+| TI_REGISTER_002 | Register Patient | Validate required name fields | High | Yes | Optional |
+| TI_REGISTER_003 | Register Patient | Validate required gender field | High | Yes | Optional |
+| TI_REGISTER_004 | Register Patient | Validate invalid birthdate or age | Medium | Optional | Optional |
+| TI_LOGOUT_001 | Logout | Logout from the system | High | Yes | Yes |
+| TI_LOGOUT_002 | Logout | Verify protected page after logout | Medium | Optional | Yes |
