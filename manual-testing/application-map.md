@@ -24,3 +24,111 @@
 | Patient Profile | Patient details page | Yes | Used to view patient information |
 | Register a Patient | Patient registration form | Yes | Important data entry workflow |
 | Logout | End user session | Yes | Basic authentication workflow |
+
+## 3. Login Flow Observation
+
+### 3.1 Valid Login Flow
+
+| Step | User Action | System Behavior |
+|---|---|---|
+| 1 | Open OpenMRS 2 demo login page | Login page is displayed |
+| 2 | Enter valid username | Username is accepted |
+| 3 | Enter valid password | Password is accepted |
+| 4 | Select location | Location is selected |
+| 5 | Click Login | User is redirected to the home dashboard |
+
+### 3.2 Possible Test Ideas
+
+| Test Idea ID | Test Idea |
+|---|---|
+| TI_LOGIN_001 | Login with valid username, password, and location |
+| TI_LOGIN_002 | Login with invalid password |
+| TI_LOGIN_003 | Login with empty username |
+| TI_LOGIN_004 | Login with empty password |
+| TI_LOGIN_005 | Login without selecting location |
+| TI_LOGIN_006 | Verify logout after successful login |
+
+## 4. Patient Search Flow Observation
+
+### 4.1 Normal Search Flow
+
+| Step | User Action | System Behavior |
+|---|---|---|
+| 1 | Open Find Patient Record | Patient search page is displayed |
+| 2 | Enter patient name or ID | System displays matching patient records |
+| 3 | Select a patient from search results | Patient profile page is opened |
+
+### 4.2 Possible Test Ideas
+
+| Test Idea ID | Test Idea |
+|---|---|
+| TI_SEARCH_001 | Search patient by valid name |
+| TI_SEARCH_002 | Search patient by valid patient identifier |
+| TI_SEARCH_003 | Search with non-existing keyword |
+| TI_SEARCH_004 | Search with empty input |
+| TI_SEARCH_005 | Search with special characters |
+| TI_SEARCH_006 | Open patient profile from search result |
+
+## 5. Patient Profile Observation
+
+### 5.1 Displayed Information
+
+| Information | Displayed? | Notes |
+|---|---|---|
+| Patient name | Yes | To be confirmed |
+| Patient identifier | Yes | To be confirmed |
+| Gender | Yes | To be confirmed |
+| Age / Birthdate | Yes | To be confirmed |
+| Visits / Encounters | Yes/No | To be confirmed |
+| Allergies / Conditions | Yes/No | To be confirmed |
+
+### 5.2 Possible Test Ideas
+
+| Test Idea ID | Test Idea |
+|---|---|
+| TI_PROFILE_001 | Verify patient profile opens after selecting a search result |
+| TI_PROFILE_002 | Verify patient name is displayed on profile page |
+| TI_PROFILE_003 | Verify patient identifier is displayed |
+| TI_PROFILE_004 | Verify navigation back to search or dashboard |
+
+## 6. Patient Registration Flow Observation
+
+### 6.1 Main Steps
+
+| Step | Section | Observation |
+|---|---|---|
+| 1 | Name | User enters given name and family name |
+| 2 | Gender | User selects gender |
+| 3 | Birthdate / Age | User enters birthdate or age |
+| 4 | Address | User enters address information |
+| 5 | Phone Number | User enters phone number if available |
+| 6 | Relatives | User may enter relationship information |
+| 7 | Confirmation | System displays entered information for confirmation |
+| 8 | Submit | New patient record is created |
+
+### 6.2 Possible Test Ideas
+
+| Test Idea ID | Test Idea |
+|---|---|
+| TI_REGISTER_001 | Register patient with valid required data |
+| TI_REGISTER_002 | Register patient without given name |
+| TI_REGISTER_003 | Register patient without family name |
+| TI_REGISTER_004 | Register patient without gender |
+| TI_REGISTER_005 | Register patient with invalid birthdate |
+| TI_REGISTER_006 | Verify confirmation page before submit |
+| TI_REGISTER_007 | Verify patient profile after successful registration |
+
+## 7. Logout Flow Observation
+
+| Step | User Action | System Behavior |
+|---|---|---|
+| 1 | User clicks Logout | User is logged out |
+| 2 | System redirects to login page | Login page is displayed |
+| 3 | User tries browser Back button | Protected page should not be accessible without login |
+
+## Possible Test Ideas
+
+| Test Idea ID | Test Idea |
+|---|---|
+| TI_LOGOUT_001 | Verify logout after successful login |
+| TI_LOGOUT_002 | Verify user cannot access protected page after logout |
