@@ -30,6 +30,14 @@ The project focuses on key healthcare workflows such as login, patient search, p
 - Patient/person detail retrieval
 - Negative API cases such as unauthorized request and invalid UUID
 
+## Automation Scope
+
+Based on the manual test cases, 8 high-priority test cases were selected for Selenium UI automation. These cases cover login, logout, patient search, patient profile access, and patient registration validation.
+
+The full mapping between manual test cases and planned automation scripts is documented in:
+
+manual-testing/traceability-matrix.md
+
 ## Tools Used
 
 | Area | Tools |
