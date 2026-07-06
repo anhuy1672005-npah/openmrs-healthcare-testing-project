@@ -132,3 +132,23 @@
 |---|---|
 | TI_LOGOUT_001 | Verify logout after successful login |
 | TI_LOGOUT_002 | Verify user cannot access protected page after logout |
+
+## 8. UI Elements for Future Automation
+
+| Page | Element | Possible Locator | Notes |
+|---|---|---|---|
+| Login | Username input | To be inspected | Prefer ID/name if available |
+| Login | Password input | To be inspected | Prefer ID/name if available |
+| Login | Location selector | To be inspected | May need click by visible text |
+| Login | Login button | To be inspected | Avoid unstable XPath |
+| Patient Search | Search input | To be inspected | Used for patient search automation |
+| Register Patient | Given name field | To be inspected | Required field |
+
+## 9. API / Network Observation
+
+| UI Flow | Possible API / Request | Method | Status | Notes |
+|---|---|---|---|---|
+| Login | Session/authentication request | GET/POST | To be confirmed | Used for API auth testing |
+| Search patient | Patient/person search request | GET | To be confirmed | Can be tested in Postman |
+| Open patient profile | Patient/person detail request | GET | To be confirmed | May use UUID |
+| Logout | Session end request | DELETE/POST | To be confirmed | Used for session testing |
