@@ -1,0 +1,2 @@
+# Treat generated evidence as non-source files for GitHub language statistics
+evidence/** linguist-generated=true
