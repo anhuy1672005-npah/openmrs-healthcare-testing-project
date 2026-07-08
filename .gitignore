@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test/cache outputs
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# Local configuration
+.env
+*.local
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Project-specific local files
+selenium-ui-automation/.env
+selenium-ui-automation/.venv/
+selenium-ui-automation/.pytest_cache/
+selenium-ui-automation/**/__pycache__/
